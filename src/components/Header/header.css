@@ -1,0 +1,17 @@
+.barNav {
+    padding: 0%;
+    flex-wrap:wrap;
+    flex-direction: row-reverse !important;
+    font-weight: 400;
+    font-size: 20px;
+    
+
+    
+}
+
+.barNav-element{
+    margin-left: 15px;
+    margin-right: 15px;
+    color: rgb(108, 108, 108);
+}
+

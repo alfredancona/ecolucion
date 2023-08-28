@@ -1,0 +1,16 @@
+.chatLogo {
+    width: 55px;
+    height: 55px;
+    z-index: 1;
+    position:fixed;
+    top: 90%;
+    right: 10px;
+    background-color: white;
+    border-radius: 21px;
+    padding: 7px;
+    border: 4px solid green;
+    
+    
+   
+    
+}
