@@ -2,19 +2,29 @@ import React from "react";
 import "./Home.css";
 function HomeContent() {
   return (
-  <div>
+    <div>
       <p className="bg-container">
-      
-      
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non rerum nulla
-      odit maxime sint corrupti mollitia autem nihil? Tenetur asperiores porro
-      ipsa eius accusamus? Deserunt, ipsa. Earum repellendus at sed. Lorem
-      ipsum, dolor sit amet consectetur adipisicing elit. Non quibusdam quam
-      aperiam ad perferendis officiis accusamus voluptatum autem. Corrupti eaque
-      ex quo earum atque autem consectetur! Fugit porro neque quod?
-    </p>
+        CONSULTORIA Y GESTIÓN URBANA AMBIENTAL 
+        
+        
+        Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Sunt id quibusdam consequuntur, officiis
+        quisquam ullam harum dolorem dolor quod quo voluptas, repellendus
+        accusamus, explicabo rerum dicta quam doloribus molestias libero. Lorem,
+        ipsum dolor sit amet consectetur adipisicing elit. Tempora laborum modi
+        perferendis veniam dolor aperiam, numquam nesciunt autem a fugit
+        laudantium nobis, tenetur dicta libero eum et temporibus eligendi
+        voluptatibus.
 
-  </div>
+        consectetur adipisicing elit. Sunt id quibusdam consequuntur, officiis
+        quisquam ullam harum dolorem dolor quod quo voluptas, repellendus
+        accusamus, explicabo rerum dicta quam doloribus molestias libero. Lorem,
+        ipsum dolor sit amet consectetur adipisicing elit. Tempora laborum modi
+        perferendis veniam dolor aperiam, numquam nesciunt autem a fugit
+        laudantium nobis, tenetur dicta libero eum et temporibus eligendi
+        voluptatibus.
+      </p>
+    </div>
   );
 }
 

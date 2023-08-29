@@ -68,7 +68,7 @@ function Header() {
               <MDBNavbarItem>
                 <MDBNavbarLink active aria-current="page">
                   <a href="#home" className="barNav-element">
-                    Home
+                    Inicio
                   </a>
                 </MDBNavbarLink>
               </MDBNavbarItem>
