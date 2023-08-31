@@ -1,0 +1,22 @@
+.background-contact {
+    background-image:url("./assets/contact.jpg");
+    position: flex;
+    height:900px;
+    width:100%; 
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+  }
+  
+  .layer-contact {
+  
+    display: flex;
+    background-color: rgba(90, 90, 90, 0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+  }
+  

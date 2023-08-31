@@ -1,9 +1,13 @@
+import './Contacto.css'
+import  ContactForm from "../ContactForm"
 function Contacto() {
 
     return (
-      <div style={{marginBottom:"1000px"}} id="contacto">
-      component contacto
+   <div className='background-contact'>
+       <div className='layer-contact' id="contacto">
+      <ContactForm/>
     </div>
+   </div>
     )
   }
   

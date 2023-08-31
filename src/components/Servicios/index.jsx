@@ -1,9 +1,12 @@
+import './Servicios.css'
 function Servicios() {
 
     return (
-      <div style={{marginBottom:"1000px"}} id="servicios">
+      <div className='background-servicios-img'>
+        <div className="background-servicios" id="servicios">
       componenent servicios
     </div>
+      </div>
     )
   }
   

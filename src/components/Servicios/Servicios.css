@@ -1,0 +1,25 @@
+.background-servicios {
+    background-color: gray  ;
+    position:flex;
+    height:600px;
+    width:50%; 
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    display:flex;
+    
+  
+  }
+  
+  .background-servicios-img {
+    background-image:url("./assets/services.jpg"); ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    padding-right: 0;
+    display: flex;
+
+  }

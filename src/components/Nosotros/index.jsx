@@ -1,8 +1,9 @@
+import './Nosotros.css'
 function Nosotros() {
 
     return (
 
-      <div style={{marginBottom:"1000px"}} id="nosotros" >
+      <div className='background-nosotros' id="nosotros" >
       component nosotros
     </div>
       

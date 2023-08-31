@@ -1,46 +1,21 @@
+.background {
+  background-image:url("./assets/background.jpg");
+  position: flex;
+  height:900px;
+  width:100%; 
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+}
 
-
-
-.bg {
-    
-  /* The image used */
-  
-  background-image: url(./assets/background.jpg) ;
-  
-  
-    /* Full height */
-    height: 900px;
-    width: 100%;
-    display: flex;
-    z-index: -1;
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position:sticky;  
-    
-    
-  }
-
-  .bg-container{
-    font-size: 30px;
-    color: rgba(255, 253, 253, 0.989);
-    
-    
-  }
-
-
-
-    div p {
-      background-color: rgba(90, 90, 90, .8);
-      height: 100%;
-      width: 100%;
-      align-items: center;
-      align-content: center;
-      display: flex;
-      flex-wrap: wrap;
-      padding: 30px;
-    }
+.layer {
+  background-color: rgba(90, 90, 90, 0.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 
 
