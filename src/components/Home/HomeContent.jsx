@@ -2,12 +2,17 @@ import React from "react";
 import "./Home.css";
 function HomeContent() {
   return (
-    <div >
-      <p style={{color:"white", padding:"30px"}}>
-        CONSULTORIA Y GESTIÓN URBANA AMBIENTAL 
-        Lorem ipsum, dolor si
+    <div className="logoHome" >
+      <img src="./assets/ECO.svg" alt="logo" style={{height:"200px"}}  />
+      <p >
+        Consultoría Urbano Ambiental
       </p>
+      <hr className="hr-home"/>
+      <h2 >
+        Proyectos Urbano Ambientales, Trámites y Gestiones
+      </h2>
     </div>
+    
   );
 }
 
