@@ -15,9 +15,9 @@ import LogoNavBar from "../LogoNavBar";
 import "./header.css";
 
 function Header() {
-  const [showBasic, setShowBasic] = useState(false);
+  const [showBasic, setShowBasic] = useState(false);//find a more descriptive var name
 
-  return (
+  return (//optimize duplicated code
     <>
       <MDBNavbar
         expand="lg"
@@ -26,7 +26,7 @@ function Header() {
         style={{ position: "fixed", top: "0", width: "100%" }}
       >
         <MDBContainer fluid>
-          <MDBNavbarBrand style={{ padding: 0 }}>
+          <MDBNavbarBrand style={{ padding: 0 }}>{/*style not in use*/}
             <LogoNavBar />
           </MDBNavbarBrand>
 

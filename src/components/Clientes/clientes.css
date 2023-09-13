@@ -1,0 +1,31 @@
+.background-clientes {
+  background-color: rgb(255, 255, 255);
+  position: flex;
+  height: 400px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+}
+
+.background-clientes img {
+  position: relative;
+  margin: 2%;
+}
+
+.background-clientes-logo {
+  width: 50%;
+  margin: 10px;
+}
+
+.background-clientes-proyect {
+  height: 80%;
+}
+
+.clientes-container {
+  font-family: Helvetica, sans-serif, Arial;
+  color: white;
+  font-size: 26px;
+  font-weight: 600;
+}

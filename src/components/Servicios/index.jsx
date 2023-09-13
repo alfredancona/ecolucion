@@ -1,13 +1,13 @@
-import './Servicios.css'
+import "./Servicios.css";
+import ServicesContent from "./ServicesContent";
 function Servicios() {
-
-    return (
-      <div className='background-servicios-img'>
-        <div className="background-servicios" id="servicios">
-      componenent servicios
-    </div>
+  return (
+    <div className="background-servicios-img">
+      <div className="background-servicios-color" id="servicios">
+        <ServicesContent />
       </div>
-    )
-  }
-  
-  export default Servicios; 
+    </div>
+  );
+}
+
+export default Servicios;

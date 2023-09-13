@@ -1,11 +1,47 @@
 .background-nosotros {
-    background-color: rgb(113, 120, 255)  ;
-    position:flex;
-    height:600px;
-    width:100%; 
-    background-position:center;
-    background-repeat:no-repeat;
-    background-size:cover;
-  
-  }
-  
+  background-color: rgb(98, 116, 81);
+  position: flex;
+  height: auto;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+  align-content: center;
+  display: grid;
+}
+
+
+
+.otro-blockquote{
+  font-size: 1.6em;
+  width:60%;
+  margin:10px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #fafafa;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+ 
+}
+
+#quote{
+  font-family:Arial;
+  content: "\201C";
+  color:#545454;
+  font-size:4em;
+  position: relative;
+  left: 10px;
+  top:-10px;
+}
+
+
+
+.otro-blockquote span{
+  display:block;
+  color:#ffffff;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}

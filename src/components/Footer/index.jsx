@@ -1,7 +1,7 @@
 import React from "react";
 
 function Footer() {
-  return (
+  return (//optimize duplicated code
     <footer className="text-center text-white" style={{backgroundColor: "#f1f1f1"}}>
       <div className="container pt-4">
         <section className="mb-4" >
@@ -65,7 +65,7 @@ function Footer() {
         className="text-center text-dark p-3"
         style={{backgroundColor: "rgba(0, 0, 0, 0.2)"}}
       >
-        © 2020 Copyright:
+        {new Date().getFullYear()/*set a const for this*/ } Copyright:
         <a className="text-dark" href="https://mdbootstrap.com/">
           MDBootstrap.com
         </a>

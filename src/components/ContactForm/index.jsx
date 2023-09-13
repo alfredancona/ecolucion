@@ -1,33 +1,125 @@
-import './ContactForm.css'
+import "./ContactForm.css";
+import { db } from "../firebase";
+import { useEffect, useState } from "react";
+import { collection, addDoc } from "firebase/firestore";
+
 function ContactForm() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [landUse, setLandUse] = useState("");
+  const [measure, setMeasure] = useState("");
+  const [message, setMessage] = useState("");
 
-    return(
-      <form className='form'>
-        <h1>
-            CONTÁCTANOS
-        </h1>
-        <label style={{marginTop:"10px"}} for='Nombre' >Nombre</label>
-        <input placeholder="Nombre y apellido" id='Nombre' type='text' required class="form-control"/>
+  const [loader, setLoader] = useState(false);
 
-        <label style={{marginTop:"10px"}} for='correo'>Correo</label>
-        <input placeholder="email@example.com" id='correo' type='mail' required class="form-control" />
+  const handleSubmit = async (e) => {
+    /*
 
-        <label style={{marginTop:"10px"}} for='uso'>Uso del Suelo</label>
-        <input placeholder="Vivienda, Comercio, Gimnasio, etc" id='uso' type='text' required class="form-control" />
+    setName("");
+    setEmail("");
+    setLandUse("");
+    setMeasure("");
+    setMessage("");
+    */
+    try {
+      e.preventDefault();
+      const docRef = await addDoc(collection(db, "users"), {
+        name: name,
+        email: email,
+        landUse: landUse,
+        measure: measure,
+        message: message,
+      });
+      alert("Mensaje enviado con éxito");
+      setLoader(false);
+      //clearFields()
+    } catch (e) {
+      alert(error.message);
+      setLoader(false);
+    }
+  };
 
-        <label style={{marginTop:"10px"}} for='superficiem2' >Superficie del Proyecto</label>
-        <input placeholder="m2 aproximados" id='superficiem2' type='number' required class="form-control"/>
+  return (
+    <form className="form" onSubmit={handleSubmit}>
+      <h1>CONTÁCTANOS</h1>
+      <label style={{ marginTop: "10px" }} htmlFor="Nombre">
+        Nombre
+      </label>
+      <input
+        placeholder="Nombre y apellido"
+        id="Nombre"
+        type="text"
+        required
+        className="form-control"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
 
-        <label style={{marginTop:"10px"}} for='descripcion' >Descripción</label>
-        <textarea placeholder="Breve descripcion del servicio requerido" id='descripcion' type='text'maxLength="250" rows="5"
-        class="form-control"></textarea>
-        <small >Máximo 250 caracteres</small>
+      <label style={{ marginTop: "10px" }} htmlFor="correo">
+        Correo
+      </label>
+      <input
+        placeholder="email@example.com"
+        id="correo"
+        type="mail"
+        required
+        className="form-control"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
 
-        <button style={{marginTop:"40px"}}type="submit">ENVIAR</button>
+      <label style={{ marginTop: "10px" }} htmlFor="uso">
+        Uso del Suelo
+      </label>
+      <input
+        placeholder="Vivienda, Comercio, Gimnasio, etc"
+        id="uso"
+        type="text"
+        required
+        className="form-control"
+        value={landUse}
+        onChange={(e) => setLandUse(e.target.value)}
+      />
 
-      </form>
-    );
+      <label style={{ marginTop: "10px" }} htmlFor="superficiem2">
+        Superficie del Proyecto
+      </label>
+      <input
+        placeholder="m2 aproximados"
+        id="superficiem2"
+        type="number"
+        required
+        className="form-control"
+        value={measure}
+        onChange={(e) => setMeasure(e.target.value)}
+      />
 
+      <label style={{ marginTop: "10px" }} htmlFor="descripcion">
+        Descripción
+      </label>
+      <textarea
+        placeholder="Breve descripcion del servicio requerido"
+        id="descripcion"
+        type="text"
+        maxLength="250"
+        rows="5"
+        className="form-control"
+        value={message}
+        onChange={(e) => setMessage(e.target.value)}
+      ></textarea>
+      <small>Máximo 250 caracteres</small>
+
+      <button
+        style={{
+          marginTop: "40px",
+          background: loader ? "#ccc" : "rgb(0, 180, 81)",
+        }}
+        type="submit"
+      >
+        ENVIAR
+      </button>
+    </form>
+  );
 }
 
-export default ContactForm
+export default ContactForm;
